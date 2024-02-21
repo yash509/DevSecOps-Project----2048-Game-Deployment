@@ -1,17 +1,12 @@
 import React, { useState } from "react";
 import { Button } from "./components/Button";
 import { Game } from "./components/Game";
-
 import "./App.less";
-
-/* eslint-disable react/jsx-no-target-blank */
 export const App = () => {
   const [date, setDate] = useState<Date>(new Date());
-
   const handleRestart = () => {
     setDate(new Date());
   };
-
   return (
     <div className="App">
       <div className="header">
@@ -59,7 +54,6 @@ export const App = () => {
         </p>
       </div>
       <div className="footer">
-        Made with ❤️ by{" "}
         <a
           href="https://www.youtube.com/channel/UCJV16_5c4A0amyBZSI4yP6A"
           target="_blank"
@@ -70,4 +64,4 @@ export const App = () => {
     </div>
   );
 };
-/* eslint-enable react/jsx-no-target-blank */
+
